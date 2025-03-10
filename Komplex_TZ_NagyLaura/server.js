@@ -12,20 +12,20 @@ const db = mysql.createConnection({
     port: 3307,
     password:"",
     database:"felveteli"
-})
+});
  
 app.get("/",(req,res)=>
 {
     res.send("Fut a Backend")
-})
+});
  
 //app.get ("/diakok",( req, res) => {
     //const sql ="SELECT * FROM `diakok`";
     //db.query(sql, (err,result) => {
         //if (err) return res.json(err);
        // return res.json(result)
-    //})
-//})
+    //});
+//});
 
 app.get("/diakok", (req, res) => {
     const sql = "SELECT * FROM `diakok` ORDER BY nev ASC";
@@ -46,6 +46,6 @@ app.get("/agazat", (req, res) => {
 app.listen(3059, ()=>
 {
     console.log("A szerverem a 3059 porton fut")
-})
+});
 
 
