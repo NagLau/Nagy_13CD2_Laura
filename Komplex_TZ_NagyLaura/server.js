@@ -34,7 +34,15 @@ app.get("/diakok", (req, res) => {
         return res.json(result);
     });
 });
- 
+
+app.get("/agazat", (req, res) => {
+    const sql = "SELECT * FROM `tagozatok` WHERE agazat = ? ORDER BY pontszam DESC";
+    db.query(sql, [tagozatok], (err, result) => {
+        if (err) return res.json(err);
+        return res.json(result);
+    });
+});
+
 app.listen(3059, ()=>
 {
     console.log("A szerverem a 3059 porton fut")
