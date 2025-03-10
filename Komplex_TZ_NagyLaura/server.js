@@ -11,7 +11,7 @@ const db = mysql.createConnection({
     host:"127.0.0.1",
     port: 3307,
     password:"",
-    database:""
+    database:"felveteli"
 })
  
 app.get("/",(req,res)=>
@@ -19,13 +19,21 @@ app.get("/",(req,res)=>
     res.send("Fut a Backend")
 })
  
-app.get ("/",( req, res) => {
-    const sql ="SELECT * FROM ``";
-    db.query(sql, (err,result) => {
+//app.get ("/diakok",( req, res) => {
+    //const sql ="SELECT * FROM `diakok`";
+    //db.query(sql, (err,result) => {
+        //if (err) return res.json(err);
+       // return res.json(result)
+    //})
+//})
+
+app.get("/diakok", (req, res) => {
+    const sql = "SELECT * FROM `diakok` ORDER BY nev ASC";
+    db.query(sql, (err, result) => {
         if (err) return res.json(err);
-        return res.json(result)
-    })
-})
+        return res.json(result);
+    });
+});
  
 app.listen(3059, ()=>
 {
