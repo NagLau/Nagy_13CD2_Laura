@@ -38,6 +38,35 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "lekerdeszes1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3059/lekredezes_",
+					"host": [
+						"localhost"
+					],
+					"port": "3059",
+					"path": [
+						"lekredezes_"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lekerdezes2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
 		}
 	]
 }
