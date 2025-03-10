@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "5e72526b-389d-44b7-be67-915f6b101491",
+		"name": "TÉMAZÁRÓ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41522737"
+	},
+	"item": [
+		{
+			"name": "Szerver futtatása",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Első lekérdezés",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Második lekérdezés",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
